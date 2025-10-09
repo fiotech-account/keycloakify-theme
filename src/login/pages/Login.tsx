@@ -266,7 +266,7 @@ export default function Login(props: PageProps<Extract<KcContext, { pageId: "log
 
                 {/* Footer */}
                 <div className="mt-8 text-center text-sm text-gray-500">
-                    <p>© 2025 Fiotech. All rights reserved.</p>
+                    <p>© 2025 Fiotech Labs. All rights reserved.</p>
                 </div>
             </div>
         </div>
