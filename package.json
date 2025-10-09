@@ -1,10 +1,10 @@
 {
-    "name": "keycloakify-starter",
-    "version": "0.0.2",
-    "description": "Starter for Keycloakify 11",
+    "name": "@fiotech-account/keycloakify-theme",
+    "version": "0.0.3",
+    "description": "Keycloakify theme for Fiotech Account",
     "repository": {
         "type": "git",
-        "url": "git://github.com/codegouvfr/keycloakify-starter.git"
+        "url": "git://github.com/fiotech-account/keycloakify-theme.git"
     },
     "type": "module",
     "scripts": {
