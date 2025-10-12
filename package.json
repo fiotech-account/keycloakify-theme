@@ -1,6 +1,6 @@
 {
   "name": "@fiotech-account/keycloakify-theme",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Keycloakify theme for Fiotech Account",
   "repository": {
     "type": "git",
