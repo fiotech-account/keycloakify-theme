@@ -18,6 +18,33 @@ export default function Login(props: PageProps<Extract<KcContext, { pageId: "log
     return (
         <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-purple-50 p-4">
             <div className="w-full max-w-md">
+                {/* Language Selector */}
+                <div className="flex justify-end mb-4">
+                    <div className="relative">
+                        <select
+                            value={i18n.currentLanguage.languageTag}
+                            onChange={e => {
+                                const selectedLanguage = i18n.enabledLanguages.find(lang => lang.languageTag === e.target.value);
+                                if (selectedLanguage) {
+                                    window.location.href = selectedLanguage.href;
+                                }
+                            }}
+                            className="appearance-none bg-white border border-gray-300 rounded-lg px-3 py-2 pr-8 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        >
+                            {i18n.enabledLanguages.map(language => (
+                                <option key={language.languageTag} value={language.languageTag}>
+                                    {language.label}
+                                </option>
+                            ))}
+                        </select>
+                        <div className="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
+                            <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
                 {/* Logo and Title */}
                 <div className="text-center mb-8">
                     <h1 className="text-4xl font-bold text-gray-900 mb-2">Fiotech Account</h1>
